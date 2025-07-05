@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 from app.Models.contact_message import Contact
 from app.extension import db
 from flask_jwt_extended import jwt_required
-from app.status_code import *
+from app.status_code import  HTTP_200_OK , HTTP_400_BAD_REQUEST , HTTP_500_INTERNAL_SERVER_ERROR , HTTP_201_CREATED , HTTP_404_NOT_FOUND
 from datetime import datetime
 
 contact_message = Blueprint('contact', __name__, url_prefix='/api/v1/contacts')

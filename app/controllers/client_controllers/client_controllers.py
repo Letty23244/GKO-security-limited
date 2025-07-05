@@ -104,8 +104,6 @@ def update_client(id):
         return jsonify({'error': str(e)}), HTTP_500_INTERNAL_SERVER_ERROR
 
 
-
-    
     # Delete the client
 @client.route('delete/<int:id>', methods=['DELETE'])
 def deleteStudent(id):
